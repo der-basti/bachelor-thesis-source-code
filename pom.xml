@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.th.wildau</groupId>
+	<artifactId>org.th.wildau.activiti.designer.extension</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<developers>
+    	<developer>
+    		<id>s7n</id>
+    		<name>Sebastian Nemak</name>
+    		<email>sebastian.nemak@th-wildau.de</email>
+    		<url>https://www.google.de/#q=sebastian+nemak</url>
+    		<organization>TH-Wildau</organization>
+    		<organizationUrl>http://th-wildau.de</organizationUrl>
+    	</developer>
+    </developers>
+	
+	<repositories>
+		<repository>
+			<id>Activiti</id>
+			<url>https://maven.alfresco.com/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.activiti.designer</groupId>
+			<artifactId>org.activiti.designer.integration</artifactId>
+			<version>5.14.1</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<index>true</index>
+						<manifest>
+							<addClasspath>false</addClasspath>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+						<manifestEntries>
+							<ActivitiDesigner-Extension-Name>Activiti SimExt Demo</ActivitiDesigner-Extension-Name>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
