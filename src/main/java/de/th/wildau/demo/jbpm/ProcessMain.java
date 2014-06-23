@@ -1,4 +1,4 @@
-package de.th.wildau.jbpm.demo;
+package de.th.wildau.demo.jbpm;
 
 import java.util.List;
 
