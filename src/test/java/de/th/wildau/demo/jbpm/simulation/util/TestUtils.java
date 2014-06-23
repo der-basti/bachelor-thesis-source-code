@@ -46,7 +46,7 @@ import org.kie.internal.runtime.StatefulKnowledgeSession;
 public class TestUtils {
 
 	public static boolean matchExpected(List<PathContext> paths,
-			List<String>... expectedIds) {
+			@SuppressWarnings("unchecked") List<String>... expectedIds) {
 
 		for (PathContext context : paths) {
 			List<FlowElement> elements = removeDuplicates(context
