@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.th.wildau.demo</groupId>
+	<artifactId>de.th.wildau.demo.bpmn2.modeler.modelreader</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<organization>
+		<name>TH-Wildau</name>
+		<url>http://th-wildau.de</url>
+	</organization>
+
+	<scm>
+		<developerConnection>Sebastian Nemak</developerConnection>
+		<url>https://github.com/der-basti/de.th.wildau.demo.bpmn2.modeler.modelreader</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License v1.0</name>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-bpmn2</artifactId>
+			<version>6.0.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>org.jbpm.eclipse</artifactId>
+			<version>6.0.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-bpmn2</artifactId>
+			<version>6.0.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-simulation</artifactId>
+			<version>1.0.0.Alpha9</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>org.jbpm</groupId> <artifactId>jbpm-examples</artifactId> 
+			<version>6.0.1.Final</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.jbpm</groupId> <artifactId>jbpm-distribution</artifactId> 
+			<version>6.0.1.Final</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.jbpm</groupId> <artifactId>jbpm-bpmn2-emfextmodel</artifactId> 
+			<version>6.0.1.Final</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.eclipse.emf</groupId> <artifactId>org.eclipse.emf.ecore</artifactId> 
+			<version>2.9.2-v20131212-0545</version> </dependency> <dependency> <groupId>org.eclipse.emf</groupId> 
+			<artifactId>org.eclipse.emf.ecore.xmi</artifactId> <version>2.9.1-v20131212-0545</version> 
+			</dependency> <dependency> <groupId>org.eclipse.emf</groupId> <artifactId>org.eclipse.emf.common</artifactId> 
+			<version>2.9.2-v20131212-0545</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.tinylog</groupId>
+			<artifactId>tinylog</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tinylog</groupId>
+			<artifactId>log4j-facade</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>oss.sonatype.org</id>
+			<name>OSS Sonatype Staging</name>
+			<url>https://oss.sonatype.org/content/groups/staging</url>
+		</repository>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+</project>
