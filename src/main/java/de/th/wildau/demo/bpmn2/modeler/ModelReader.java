@@ -56,7 +56,7 @@ public class ModelReader {
 		for (RootElement re : rootElements) {
 			if (re instanceof Process) {
 				Process process = (Process) re;
-				Logger.info("Process: name=" + process.getName() + " ID="
+				Logger.debug("Process: name=" + process.getName() + " ID="
 						+ process.getId());
 				for (FlowElement fe : process.getFlowElements()) {
 					sb.setLength(0);
@@ -74,8 +74,8 @@ public class ModelReader {
 							}
 						}
 					} else {
-						sb.append(fe.getName()).append(" (ID=")
-								.append(fe.getId()).append(")").append(": ");
+						sb.append("Name=").append(fe.getName()).append(" ID=")
+								.append(fe.getId());
 					}
 					Logger.info(sb.toString());
 				}
