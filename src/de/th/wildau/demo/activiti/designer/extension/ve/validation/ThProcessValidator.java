@@ -1,4 +1,4 @@
-package de.th.wildau.activiti.extension.ve.validation;
+package de.th.wildau.demo.activiti.designer.extension.ve.validation;
 
 import org.activiti.bpmn.model.StartEvent;
 import org.activiti.designer.eclipse.extension.validation.AbstractProcessValidator;

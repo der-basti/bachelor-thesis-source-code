@@ -38,14 +38,14 @@
 	<extension
 		point="org.activiti.designer.eclipse.extension.validation.ProcessValidator">
 		<ProcessValidator
-			class="de.th.wildau.demo.activiti.extension.ve.validation.ThProcessValidator">
+			class="de.th.wildau.demo.activiti.designer.extension.ve.validation.ThProcessValidator">
 		</ProcessValidator>
 	</extension>
 
 	<extension
 		point="org.activiti.designer.eclipse.extension.ExportMarshaller">
 		<ExportMarshaller
-			class="de.th.wildau.demo.activiti.extension.ve.export.ThExportMarshaller">
+			class="de.th.wildau.demo.activiti.designer.extension.ve.export.ThExportMarshaller">
 		</ExportMarshaller>
 	</extension>
 
