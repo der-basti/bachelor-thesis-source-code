@@ -1,4 +1,4 @@
-package org.th.wildau.activiti.designer.extension.palette.task;
+package de.th.wildau.demo.activiti.designer.extension.palette.task;
 
 import org.activiti.designer.integration.servicetask.AbstractCustomServiceTask;
 import org.activiti.designer.integration.servicetask.PropertyType;
@@ -13,7 +13,7 @@ import org.activiti.designer.integration.servicetask.annotation.Runtime;
  * 
  * @author Sebastian Nemak
  */
-@Runtime(javaDelegateClass = "org.th.wildau.activiti.designer.extension.palette.task.ThWildauTask")
+@Runtime(javaDelegateClass = "de.th.wildau.demo.activiti.designer.extension.palette.task.ThWildauTask")
 @Help(displayHelpShort = "Help short", displayHelpLong = "Help long")
 public class ThWildauTask extends AbstractCustomServiceTask {
 
