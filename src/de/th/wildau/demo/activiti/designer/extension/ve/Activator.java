@@ -1,4 +1,4 @@
-package de.th.wildau.activiti.designer.extension.ve;
+package de.th.wildau.demo.activiti.designer.extension.ve;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -10,7 +10,7 @@ import org.osgi.framework.BundleContext;
 public class Activator extends AbstractUIPlugin {
 
 	// // The plug-in ID
-	//	public static final String PLUGIN_ID = "de.th.wildau.activiti.designer.extension.ve"; //$NON-NLS-1$
+	//	public static final String PLUGIN_ID = "de.th.wildau.demo.activiti.designer.extension.ve"; //$NON-NLS-1$
 	//
 	// // The shared instance
 	// private static Activator plugin;
@@ -61,7 +61,7 @@ public class Activator extends AbstractUIPlugin {
 	// return imageDescriptorFromPlugin(PLUGIN_ID, path);
 	// }
 
-	public static final String PLUGIN_ID = "de.th.wildau.activiti.designer.extension.ve"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "de.th.wildau.demo.activiti.designer.extension.ve"; //$NON-NLS-1$
 
 	private static BundleContext context;
 

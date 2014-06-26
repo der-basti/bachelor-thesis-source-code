@@ -27,6 +27,7 @@ public class ThProcessValidator extends AbstractProcessValidator {
 		return "ValidatorName";
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public boolean validateDiagram(Diagram diagram, IProgressMonitor arg1) {
 		// TODO Auto-generated method stub

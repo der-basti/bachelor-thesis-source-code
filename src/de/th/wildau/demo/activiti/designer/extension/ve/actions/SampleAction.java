@@ -1,4 +1,4 @@
-package de.th.wildau.activiti.designer.extension.ve.actions;
+package de.th.wildau.demo.activiti.designer.extension.ve.actions;
 
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.viewers.ISelection;

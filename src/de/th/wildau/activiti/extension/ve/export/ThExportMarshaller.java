@@ -13,24 +13,6 @@ import org.eclipse.core.runtime.SubProgressMonitor;
 
 public class ThExportMarshaller extends AbstractExportMarshaller {
 
-	// @Override
-	// public String getFormatName() {
-	// // TODO Auto-generated method stub
-	// return null;
-	// }
-	//
-	// @Override
-	// public String getMarshallerName() {
-	// // TODO Auto-generated method stub
-	// return null;
-	// }
-	//
-	// @Override
-	// protected void doMarshallDiagram() {
-	// // TODO Auto-generated method stub
-	//
-	// }
-
 	private static final String OUTPUT_FILE_NAME_PATTERN = ExportMarshaller.PLACEHOLDER_ORIGINAL_FILENAME_WITHOUT_EXTENSION
 			+ "/"
 			+ ExportMarshaller.PLACEHOLDER_ORIGINAL_FILE_EXTENSION
@@ -48,6 +30,7 @@ public class ThExportMarshaller extends AbstractExportMarshaller {
 		return "Plain Text";
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void doMarshallDiagram() {
 
