@@ -18,15 +18,14 @@ public class SimElement {
 
 		// type register
 		ModelBuilder modelBuilder = ModelBuilder.createInstance("modelName");
-		Simulation.registerType(modelBuilder);
 		// FIXME org.camunda.bpm.model.xml.ModelException: Element type
 		// simNamespace:simType has no id attribute
 		BpmnModelInstance modelInstance = new BpmnModelInstanceImpl(
 				(ModelImpl) modelBuilder.build(), modelBuilder,
 				DomUtil.getEmptyDocument(DocumentBuilderFactory.newInstance()));
 
-		Simulation sim = create(modelInstance, "tweety", "cat");
-		// sim.addChildElement(tweety);
+		Simulation.registerType(modelBuilder);
+		Simulation sim = create(modelInstance, "myId", "myName");
 		modelInstance.setDocumentElement(sim);
 
 		Bpmn.writeModelToFile(new File("src/main/resources/simElement.bpmn"),
