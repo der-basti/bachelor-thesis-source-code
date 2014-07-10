@@ -1,5 +1,7 @@
 # Created by http://www.gitignore.io
 
+target/
+
 #!! ERROR: ecl is undefined. Use list command to see defined gitignore types !!#
 
 ### Eclipse ###
