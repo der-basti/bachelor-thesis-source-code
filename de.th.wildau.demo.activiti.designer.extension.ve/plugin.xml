@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Sample Action Set"
+            visible="true"
+            id="de.th.wildau.demo.activiti.designer.extension.ve.actionSet">
+         <menu
+               label="Sample &amp;Menu"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Sample Action"
+               icon="icons/sample.gif"
+               class="de.th.wildau.demo.activiti.designer.extension.ve.actions.SampleAction"
+               tooltip="Hello, Eclipse world"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="de.th.wildau.demo.activiti.designer.extension.ve.actions.SampleAction">
+         </action>
+      </actionSet>
+   </extension>
+   
+   <extension-point id="org.activiti.designer.eclipse.extension.export.ExportMarshaller" 
+   	name="Export Marshaller" 
+   	schema="schema/org.activiti.designer.eclipse.extension.export.ExportMarshaller.exsd"/>
+
+   <extension-point id="org.activiti.designer.eclipse.extension.validation.ProcessValidator" 
+   	name="Process Validator" 
+   	schema="schema/org.activiti.designer.eclipse.extension.validation.ProcessValidator.exsd"/>
+   
+	<extension
+		point="org.activiti.designer.eclipse.extension.validation.ProcessValidator">
+		<ProcessValidator
+			class="de.th.wildau.demo.activiti.designer.extension.ve.validation.ThProcessValidator">
+		</ProcessValidator>
+	</extension>
+
+	<extension
+		point="org.activiti.designer.eclipse.extension.ExportMarshaller">
+		<ExportMarshaller
+			class="de.th.wildau.demo.activiti.designer.extension.ve.export.ThExportMarshaller">
+		</ExportMarshaller>
+	</extension>
+
+</plugin>

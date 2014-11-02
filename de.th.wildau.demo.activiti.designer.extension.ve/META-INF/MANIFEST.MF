@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Acticviti Designer Extension Validation & Export
+Bundle-SymbolicName: de.th.wildau.demo.activiti.designer.extension.ve;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Activator: de.th.wildau.demo.activiti.designer.extension.ve.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.activiti.designer.eclipse;bundle-version="5.14.1",
+ org.activiti.designer.libs;bundle-version="5.14.1",
+ org.activiti.designer.util;bundle-version="5.14.1",
+ org.eclipse.graphiti.mm;bundle-version="0.10.1",
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: TH-Wildau
