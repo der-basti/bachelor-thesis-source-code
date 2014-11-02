@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Demo Category"
+            id="de.th.wildau.demo.eclipse.extension.commands.category">
+      </category>
+      <command
+            name="Demo Command"
+            categoryId="de.th.wildau.demo.eclipse.extension.commands.category"
+            id="de.th.wildau.demo.eclipse.extension.commands.demoCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="de.th.wildau.demo.eclipse.extension.commands.demoCommand"
+            class="de.th.wildau.demo.eclipse.extension.handlers.DemoHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="de.th.wildau.demo.eclipse.extension.commands.demoCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+T"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="de.th.wildau.demo.eclipse.extension.menus.thwildauMenu"
+               label="TH-Wildau"
+               mnemonic="T">
+            <command
+                  commandId="de.th.wildau.demo.eclipse.extension.commands.demoCommand"
+                  icon="icons/th-wildau-16px.gif"
+                  id="de.th.wildau.demo.eclipse.extension.menus.demoCommand"
+                  label="Demo Menubar Action"
+                  mnemonic="D">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="de.th.wildau.demo.eclipse.extension.toolbars.demoToolbar">
+            <command
+                  commandId="de.th.wildau.demo.eclipse.extension.commands.demoCommand"
+                  icon="icons/th-wildau-16px.gif"
+                  tooltip="Demo Toolbar Action"
+                  id="de.th.wildau.demo.eclipse.extension.toolbars.demoCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="de.th.wildau.demo.eclipse.extension.preferences.THWildauPreferencePage"
+            id="de.th.wildau.demo.eclipse.extension.preferences.THWildauPreferencePage"
+            name="TH-Wildau">
+      </page>
+   </extension>
+
+</plugin>
