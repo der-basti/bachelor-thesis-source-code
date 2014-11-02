@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns:camunda="http://activiti.org/bpmn" targetNamespace="http://camunda.org/examples" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <process id="ProcessId" name="ProcessName">
+    <startEvent id="startEvent_9f3fa6b4-e94d-45e7-866f-efdbeaf8f577" name="Start">
+      <outgoing>sequenceFlow_fae9ffad-277a-421f-b35c-a54223368010</outgoing>
+    </startEvent>
+    <userTask camunda:assignee="Fred" id="userTask_5ff9a763-5df4-4943-832b-fd8a02a9856a" name="User Task">
+      <incoming>sequenceFlow_fae9ffad-277a-421f-b35c-a54223368010</incoming>
+      <outgoing>sequenceFlow_d7e7df1a-bda8-48a8-be56-e116001aadfe</outgoing>
+    </userTask>
+    <sequenceFlow id="sequenceFlow_fae9ffad-277a-421f-b35c-a54223368010" sourceRef="startEvent_9f3fa6b4-e94d-45e7-866f-efdbeaf8f577" targetRef="userTask_5ff9a763-5df4-4943-832b-fd8a02a9856a"/>
+    <endEvent id="endEvent_d6769453-6ad5-4f37-a548-b752b6aae4c9">
+      <incoming>sequenceFlow_d7e7df1a-bda8-48a8-be56-e116001aadfe</incoming>
+    </endEvent>
+    <sequenceFlow id="sequenceFlow_d7e7df1a-bda8-48a8-be56-e116001aadfe" sourceRef="userTask_5ff9a763-5df4-4943-832b-fd8a02a9856a" targetRef="endEvent_d6769453-6ad5-4f37-a548-b752b6aae4c9"/>
+  </process>
+</definitions>
